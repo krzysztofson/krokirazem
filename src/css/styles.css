@@ -1,0 +1,21 @@
+/* 
+    Write your custom CSS here and also abstract your Tailwind css using @apply
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    line-height: 2;
+    @apply font-heading;
+}
+
+p, span, li {
+    font-weight: 300;
+    @apply text-gray-500;
+}
+
+a:hover {
+    @apply underline;
+}
