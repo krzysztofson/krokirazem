@@ -7,13 +7,9 @@ module.exports = {
         heading: ["Playfair Display", "serif"],
       },
       colors: {
-        primary: {
-          100: "#faf0e6",
-          200: "#fff0db",
-          300: "#eed9c4",
-          400: "#e4d5b7",
-          500: "#d9b99b",
-        },
+        primary: "#3c6ca8",
+        secondary: "#8199bd",
+        accent: "#ff8666",
       },
     },
   },

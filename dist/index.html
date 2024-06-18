@@ -25,7 +25,7 @@
     <nav class="text fixed top-0 z-20 w-full bg-white py-1 shadow">
       <div class="relative">
         <div class="container mx-auto flex items-center justify-between px-4">
-          <img src="assets/imgs/logo.jpg" class="h-16 px-1 py-2" alt="logo" />
+          <img src="assets/imgs/logo.jpg" class="h-20 px-1 py-2" alt="logo" />
           <div
             class="js-nav absolute inset-x-0 top-11 mx-auto hidden w-full flex-col space-y-5 bg-white py-10 text-center text-sm font-light text-blue-800 lg:relative lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-x-5 lg:space-y-0 lg:py-0 lg:text-right"
           >
@@ -36,7 +36,7 @@
             <a class="hover:text-orange-600" href="#">Blog</a>
             <a class="hover:text-orange-600" href="#">Gabinety</a>
             <a class="hover:text-orange-600" href="#">Kontakt</a>
-            <a class="rounded-xl bg-orange-300 px-2 py-1" href="#">Umów wizytę</a>
+            <a class="rounded-xl bg-accent px-2 py-1 text-white" href="#">Umów wizytę</a>
           </div>
           <button class="js-nav-btn cursor-pointer lg:hidden">
             <?xml version="1.0" encoding="utf-8"?>
@@ -57,13 +57,13 @@
       <div class="container mx-auto px-4 py-24">
         <div class="items-center lg:grid lg:grid-cols-5 xl:grid-cols-2">
           <div class="col-span-3 xl:col-span-1">
-            <h1 class="text-xl text-blue-400 lg:text-6xl">
+            <h1 class="text-xl text-blue-400 lg:text-5xl">
+              <span class="text-5xl text-primary lg:text-6xl">Kroki&nbsp;razem</span><br />
               Poradnia psychologiczno – pedagogiczna
-              <span class="text-blue-600">Kroki&nbsp;razem</span>
             </h1>
-            <p class="pb-6 pt-6 text-lg text-orange-500 lg:text-xl">Razem stawiamy kroki ku zdrowiu psychicznemu.</p>
+            <p class="py-8 text-lg text-accent lg:text-xl">Razem stawiamy kroki ku zdrowiu psychicznemu</p>
             <a
-              class="rounded-xl bg-orange-300 px-4 py-2 text-lg text-blue-800 transition duration-200 hover:bg-orange-400"
+              class="rounded-xl bg-accent px-4 py-2 text-lg text-white transition duration-200 hover:bg-orange-500"
               href="#"
               >Wybierz specjalistę</a
             >
@@ -73,29 +73,63 @@
       </div>
     </header>
 
-    <section class="py-14" id="onas">
+    <section class="py-24" id="onas">
       <div class="container mx-auto px-4">
-        <h2 class="mb-6 text-center text-5xl text-blue-700">O nas</h2>
-        <div class="grid-cols-2 lg:grid lg:gap-6">
+        <h2 class="mb-16 text-center text-5xl text-primary">Formularz zgłoszeniowy</h2>
+        <div class="grid-cols-2 lg:grid lg:items-center lg:gap-16">
+          <form action="">
+            <input
+              class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+              type="text"
+              placeholder="Imię i nazwisko"
+            />
+            <input
+              class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+              type="email"
+              placeholder="Adres e-mail"
+            />
+            <input
+              class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+              type="tel"
+              placeholder="Numer telefonu"
+            />
+            <textarea
+              class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+              placeholder="Wiadomość"
+            ></textarea>
+            <input
+              class="mb-4 w-full rounded-xl border-2 border-accent bg-accent p-4 text-lg text-white"
+              type="submit"
+              value="Wyślij zgłoszenie"
+            />
+          </form>
           <div>
-            <p class="mb-6 text-justify text-lg text-stone-700">
+            <p class="mb-6 text-justify text-lg text-stone-700 lg:text-xl">
+              <strong class="text-stone-900">Nie wiesz jakiego specjalistę wybrać?</strong>
+              <strong class="text-accent">Wypełnij formularz zgłoszeniowy</strong> dostępny na naszej stronie. Po jego
+              otrzymaniu, skontaktujemy się z Tobą, aby dobrać odpowiedniego specjalistę i zaproponować termin
+              bezpłatnej konsultacji wstępnej. <br /><br />
+              Naszym celem jest zapewnienie jak najlepszego wsparcia, aby każdy mógł poczuć się zrozumiany, doceniony i
+              otoczony profesjonalną opieką.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24" id="onas">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-6 text-center text-5xl text-primary">O nas</h2>
+        <div class="grid-cols-2 lg:grid lg:items-center lg:gap-6">
+          <div>
+            <p class="mb-6 text-justify text-lg text-stone-700 lg:pr-6 lg:text-xl">
               <strong class="text-stone-900">Naszym celem</strong> jest wspieranie rodziców i dzieci w pokonywaniu
               różnorodnych wyzwań rozwojowych, komunikacyjnych i emocjonalnych. Działamy z troską, zaangażowaniem i
-              empatią, niosąc profesjonalną pomoc wszystkim potrzebującym. Podstawą naszej pracy są założenia
-              rodzicielstwa bliskości, które zakładają budowanie silnych i zdrowych relacji w rodzinie. Nasze podejście
-              obejmuje otaczanie opieką całej rodziny jako całości, aby każdy członek mógł czuć się wspierany i
-              zrozumiany. <br /><br />
-              <strong class="text-stone-900">Nie wiesz jakiego specjalistę wybrać?</strong>
-              Wypełnij formularz zgłoszeniowy dostępny na naszej stronie. Po jego otrzymaniu, skontaktujemy się z Tobą,
-              aby dobrać odpowiedniego specjalistę i zaproponować termin bezpłatnej konsultacji wstępnej. Naszym celem
-              jest zapewnienie jak najlepszego wsparcia, aby każdy mógł poczuć się zrozumiany, doceniony i otoczony
-              profesjonalną opieką.
+              empatią, niosąc profesjonalną pomoc wszystkim potrzebującym. <br /><br />
+              Podstawą naszej pracy są założenia rodzicielstwa bliskości, które zakładają budowanie silnych i zdrowych
+              relacji w rodzinie. Nasze podejście obejmuje otaczanie opieką całej rodziny jako całości, aby każdy
+              członek mógł czuć się wspierany i zrozumiany.
             </p>
-            <a
-              class="rounded-xl bg-orange-300 px-4 py-2 text-lg text-blue-800 transition duration-200 hover:bg-orange-400"
-              href="#"
-              >Wypełnij formularz</a
-            >
           </div>
           <div class="relative mt-8">
             <div
@@ -108,9 +142,9 @@
       </div>
     </section>
 
-    <section class="py-14" id="oferta">
+    <section class="py-24" id="oferta">
       <div class="container mx-auto px-4">
-        <h2 class="mb-10 text-center text-5xl text-blue-700">Oferta</h2>
+        <h2 class="mb-10 text-center text-5xl text-primary">Oferta</h2>
         <p class="mx-auto mb-10 max-w-5xl text-center">
           <strong class="text-stone-900">Nasza oferta</strong> skierowana jest do dzieci od 3 roku życia, nastolatków
           oraz dorosłych. Szczególną uwagę poświęcamy pacjentom w procesie leczenia, dbając o ich dobrostan psychiczny i
@@ -119,83 +153,79 @@
           wszystkie aspekty życia rodzinnego i osobistego.
         </p>
 
-        <h3 class="mb-8 pt-12 text-3xl text-orange-500">Pogłęb zrozumienie swojego dziecka</h3>
+        <h3 class="mb-8 pt-12 text-3xl text-accent">Pogłęb zrozumienie swojego dziecka</h3>
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Proces prediagnostyczny</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Proces prediagnostyczny</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Psycholog dziecięcy</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Psycholog dziecięcy</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Konsultacje dla rodziców</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Konsultacje dla rodziców</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Psychodietetyka</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Żywienie dzieci i młodzieży</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Psychoterapia dzieci i młodzieży</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Psychoterapia dzieci i młodzieży</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
+          </div>
+          <div class="rounded-xl bg-blue-100 p-8">
+            <h3 class="py-5 text-2xl text-primary">Interwencja kryzysowa</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
         </div>
 
-        <h3 class="mb-8 pt-12 text-3xl text-orange-500">Znajdź wsparcie dla siebie</h3>
+        <h3 class="mb-8 pt-12 text-3xl text-accent">Znajdź wsparcie dla siebie</h3>
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Psychoterapia indywidualna</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Psychoterapia indywidualna</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Interwencja kryzysowa</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Konsultacje dietetyczne i psychodietetyka</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Psychodietetyka</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
-          </div>
-          <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Psychoterapia par i rodzin</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Psychoterapia par i rodzin</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
         </div>
 
-        <h3 class="mb-8 pt-12 text-3xl text-orange-500">Zapewnij wsparcie w rozwoju</h3>
+        <h3 class="mb-8 pt-12 text-3xl text-accent">Zapewnij wsparcie w rozwoju</h3>
 
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Zajęcia TUS</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Zajęcia TUS</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Terapia pedagogiczna</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Terapia pedagogiczna</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
           <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Terapia ręki</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
-          </div>
-          <div class="rounded-xl bg-blue-100 p-8">
-            <h3 class="py-5 text-2xl text-blue-700">Logopeda</h3>
-            <a href="#" class="text-orange-400">Szczegóły</a>
+            <h3 class="py-5 text-2xl text-primary">Terapia ręki</h3>
+            <a href="#" class="text-accent">Szczegóły</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-14" id="oferta">
+    <section class="py-24" id="oferta">
       <div class="container mx-auto px-4">
-        <h2 class="mb-10 text-center text-5xl text-blue-700">Obszary pomocy</h2>
+        <h2 class="mb-10 text-center text-5xl text-primary">Obszary pomocy</h2>
 
         <div class="md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3">
           <div class="mb-5 rounded-xl bg-blue-100 p-8">
             <img class="h-40 pt-6" src="assets/imgs/dziecko.png" alt="dziecko" />
-            <h3 class="py-5 text-2xl text-blue-700">DZIECKO</h3>
+            <h3 class="py-5 text-2xl text-primary">DZIECKO</h3>
             <ul class="list-disc pl-6 text-lg">
               <li class="text-stone-800">Zaburzenia lękowe</li>
               <li class="text-stone-800">Wyzwania związane z zachowaniem</li>
@@ -209,7 +239,7 @@
 
           <div class="mb-5 rounded-xl bg-blue-100 p-8">
             <img class="h-40" src="assets/imgs/rodzice.png" alt="rodzice" />
-            <h3 class="py-5 text-2xl text-blue-700">RODZICE</h3>
+            <h3 class="py-5 text-2xl text-primary">RODZICE</h3>
             <ul class="list-disc pl-6 text-lg">
               <li class="text-stone-800">Konsultacje wychowawcze</li>
               <li class="text-stone-800">Trudności w relacjach z dziećmi</li>
@@ -221,7 +251,7 @@
 
           <div class="mb-5 rounded-xl bg-blue-100 p-8">
             <img class="h-40" src="assets/imgs/para.png" alt="para" />
-            <h3 class="py-5 text-2xl text-blue-700">KOBIETA / MĘŻCZYZNA/ PARA</h3>
+            <h3 class="py-5 text-2xl text-primary">KOBIETA / MĘŻCZYZNA/ PARA</h3>
             <ul class="list-disc pl-6 text-lg">
               <li class="text-stone-800">Zaburzenia nastroju</li>
               <li class="text-stone-800">Zaburzenia lękowe</li>
