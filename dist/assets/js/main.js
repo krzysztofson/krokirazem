@@ -10,13 +10,6 @@ if (navBtn) {
   navBtn.addEventListener("click", togglenav);
 }
 
-window.addEventListener("load", () => {
-  lightGallery(document.getElementById("lightgallery"), {
-    getCaptionFromTitleOrAlt: true,
-    thumbHeight: "60px",
-  });
-});
-
 const contactBtns = document.querySelectorAll(".js-contact-btn");
 const modal = document.querySelector(".js-modal");
 const modalBg = document.querySelector(".js-modal-bg");
