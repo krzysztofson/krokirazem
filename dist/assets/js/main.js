@@ -6,7 +6,9 @@ function togglenav() {
   nav.classList.toggle("flex");
 }
 
-navBtn.addEventListener("click", togglenav);
+if (navBtn) {
+  navBtn.addEventListener("click", togglenav);
+}
 
 window.addEventListener("load", () => {
   lightGallery(document.getElementById("lightgallery"), {
@@ -25,9 +27,16 @@ function toggleModal() {
   modal.classList.toggle("hidden");
 }
 
-contactBtns.forEach((btn) => {
-  btn.addEventListener("click", toggleModal);
-});
+if (contactBtns) {
+  contactBtns.forEach((btn) => {
+    btn.addEventListener("click", toggleModal);
+  });
+}
 
-modalBg.addEventListener("click", toggleModal);
-modalClose.addEventListener("click", toggleModal);
+if (modalBg && modalClose) {
+  modalBg.addEventListener("click", toggleModal);
+  modalClose.addEventListener("click", toggleModal);
+}
+
+const year = new Date().getFullYear();
+document.querySelector("#year").textContent = year;
