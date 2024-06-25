@@ -18,10 +18,30 @@ span,
 li {
   font-weight: 300;
   @apply text-gray-500;
+  @apply text-base;
+  @apply text-stone-700;
 }
 
 a:hover {
   @apply underline;
+}
+
+ul {
+  @apply list-disc;
+  @apply pl-8;
+}
+
+.content {
+  @apply max-w-3xl;
+  @apply mx-auto;
+}
+
+.content h2 {
+  @apply pt-6;
+  @apply pb-3;
+  @apply text-accent;
+  @apply text-2xl;
+  @apply font-bold;
 }
 
 /* Define the keyframes for #person1 animation */
