@@ -44,6 +44,14 @@ ul {
   @apply font-bold;
 }
 
+.content h3 {
+  @apply pt-6;
+  @apply pb-3;
+  @apply text-accent;
+  @apply text-2xl;
+  @apply font-bold;
+}
+
 /* Define the keyframes for #person1 animation */
 @keyframes person1Animation {
   0% {
