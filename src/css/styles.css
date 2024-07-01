@@ -31,6 +31,15 @@ ul {
   @apply pl-8;
 }
 
+tr {
+  @apply transition;
+  @apply duration-300;
+}
+
+tr:hover {
+  @apply bg-orange-50;
+}
+
 .content {
   @apply max-w-3xl;
   @apply mx-auto;
