@@ -627,6 +627,12 @@ tr:hover {
 .mt-8 {
   margin-top: 2rem;
 }
+.mt-32 {
+  margin-top: 8rem;
+}
+.mt-20 {
+  margin-top: 5rem;
+}
 .block {
   display: block;
 }
@@ -865,6 +871,12 @@ tr:hover {
 }
 .pt-6 {
   padding-top: 1.5rem;
+}
+.pt-20 {
+  padding-top: 5rem;
+}
+.pt-36 {
+  padding-top: 9rem;
 }
 .text-left {
   text-align: left;
