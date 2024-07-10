@@ -578,6 +578,12 @@ tr:hover {
 .top-4 {
   top: 1rem;
 }
+.top-24 {
+  top: 6rem;
+}
+.top-\[88px\] {
+  top: 88px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -693,6 +699,9 @@ tr:hover {
 .flex-col {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 .items-end {
   align-items: flex-end;
 }
@@ -723,6 +732,11 @@ tr:hover {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-auto {
   overflow: auto;
@@ -847,6 +861,10 @@ tr:hover {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
