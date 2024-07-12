@@ -110,6 +110,10 @@ tr:hover {
   animation: person2Animation 3s ease-in-out infinite;
 }
 
+#medfile-register-widget > div {
+  display: none;
+}
+
 /* Apply the animation to #head */
 /* #head {
   animation: headAnimation 4s ease-in-out infinite;
