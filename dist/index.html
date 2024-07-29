@@ -1721,7 +1721,7 @@
       </div>
     </header>
 
-    <!-- <section class="py-32">
+    <section class="py-32">
       <div class="container mx-auto px-4">
         <h2 class="mb-16 text-center text-5xl text-primary">Formularz zgłoszeniowy</h2>
         <div class="grid-cols-2 lg:grid lg:items-center lg:gap-16">
@@ -1743,7 +1743,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section class="py-32" id="onas">
       <div class="container mx-auto px-4">
@@ -1986,11 +1986,11 @@
             <p class="mb-6 text-white">
               Email: <strong><a href="mailto:kontakt@krokirazem.pl">kontakt@krokirazem.pl</a></strong>
             </p>
-            <!-- <a
+            <a
               class="rounded-xl bg-primary px-4 py-2 text-base text-white transition duration-200 hover:bg-blue-900"
               href="umow-wizyte.html"
               >Umów wizytę</a
-            > -->
+            >
           </div>
           <!-- <div>
             <p class="mb-2 text-white">Zapisz się do newslettera</p>
@@ -2020,6 +2020,11 @@
     <footer class="py-6">
       <div class="container mx-auto px-4">
         <div class="flex flex-col items-end justify-between md:flex-row">
+          <p>
+            <a class="text-xs md:text-sm" href="/polityka-prywatnosci.html"> Polityka prywatności</a>
+          </p>
+        </div>
+        <div class="flex flex-col items-end justify-between md:flex-row">
           <p class="text-xs md:text-sm">
             Copyright ©<span class="text-xs md:text-sm" id="year"></span> Kroki Razem. All Rights Reserved.
           </p>
@@ -2042,25 +2047,31 @@
           specjalistę i zaproponować termin bezpłatnej konsultacji wstępnej.
         </p>
 
-        <form action="">
+        <form action="https://submit-form.com/GoZxw6Q1A">
           <input
             class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
             type="text"
             placeholder="Imię i nazwisko"
+            name="name"
           />
           <input
             class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
             type="email"
             placeholder="Adres e-mail"
+            name="email"
           />
           <input
             class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
             type="tel"
             placeholder="Numer telefonu"
+            name="phone"
           />
           <div class="mb-4">
-            <label class="mb-2 block text-lg text-stone-800">Dla kogo szukasz specjalisty?</label>
-            <select class="w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800">
+            <label for="for-who" class="mb-2 block text-lg text-stone-800">Dla kogo szukasz specjalisty?</label>
+            <select
+              class="w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800"
+              name="for-who"
+            >
               <option>Dla dziecka</option>
               <option>Dla Pary</option>
               <option>Psychoterapia Indywidualna</option>
@@ -2073,20 +2084,33 @@
           <textarea
             class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
             placeholder="Z jakim problemem się mierzysz?"
+            name="problem"
           ></textarea>
           <textarea
             class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
             placeholder="Opisz nam w kilku słowach jakiej pomocy szukasz"
+            name="description"
           ></textarea>
           <div class="mb-4">
-            <label class="mb-2 block text-lg text-stone-800">Preferowana forma spotkań</label>
-            <select class="w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800">
+            <label for="form" class="mb-2 block text-lg text-stone-800">Preferowana forma spotkań</label>
+            <select
+              class="w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800"
+              name="form"
+            >
               <option>Spotkanie stacjonarne</option>
               <option>Spotkania online</option>
             </select>
           </div>
+
+          <div class="mb-4">
+            <label for="consent" class="block text-left text-xs font-light text-stone-800">
+              <input type="checkbox" id="consent" name="consent" required />
+              Wyrażam zgodę na kontakt telefoniczny lub mailowy w odpowiedzi na przesłaną wiadomość przez Poradnię
+              Psychologiczno - Pedagogiczną Kroki Razem z siedzibą w Warszawie, przy ul. Żeromskiego 4/50.
+            </label>
+          </div>
           <input
-            class="mb-4 w-full rounded-xl border-2 border-accent bg-accent p-4 text-lg text-white"
+            class="mb-4 w-full cursor-pointer rounded-xl border-2 border-accent bg-accent p-4 text-lg text-white transition duration-200 hover:bg-orange-500"
             type="submit"
             value="Wyślij zgłoszenie"
           />

@@ -61,6 +61,11 @@ tr:hover {
   @apply font-bold;
 }
 
+.content a {
+  @apply text-accent;
+  @apply underline;
+}
+
 /* Define the keyframes for #person1 animation */
 @keyframes person1Animation {
   0% {

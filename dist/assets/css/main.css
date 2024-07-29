@@ -499,6 +499,11 @@ tr:hover {
   line-height: 2rem;
   font-weight: 700;
 }
+.content a {
+  --tw-text-opacity: 1;
+  color: rgb(255 134 102 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
 /* Define the keyframes for #person1 animation */
 @keyframes person1Animation {
   0% {
@@ -734,9 +739,6 @@ tr:hover {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-10 {
-  gap: 2.5rem;
 }
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -1104,6 +1106,10 @@ tr:hover {
   .md\:gap-6 {
     gap: 1.5rem;
   }
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1111,10 +1117,6 @@ tr:hover {
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -1145,11 +1147,11 @@ tr:hover {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .lg\:flex-row {
     flex-direction: row;
