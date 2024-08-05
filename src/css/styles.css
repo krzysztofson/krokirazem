@@ -66,6 +66,11 @@ tr:hover {
   @apply underline;
 }
 
+.content a.block {
+  @apply text-white;
+  @apply no-underline;
+}
+
 /* Define the keyframes for #person1 animation */
 @keyframes person1Animation {
   0% {

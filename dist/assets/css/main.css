@@ -504,6 +504,11 @@ tr:hover {
   color: rgb(255 134 102 / var(--tw-text-opacity));
   text-decoration-line: underline;
 }
+.content a.block {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
 /* Define the keyframes for #person1 animation */
 @keyframes person1Animation {
   0% {
@@ -1205,10 +1210,6 @@ tr:hover {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 @media (min-width: 1280px) {
