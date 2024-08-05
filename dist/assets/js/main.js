@@ -35,7 +35,7 @@ if (modalBg && modalClose) {
 if (mobileNavBtns) {
   mobileNavBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      nav.classList.add("hidden");
+      togglenav();
     });
   });
 }
