@@ -42,12 +42,3 @@ if (mobileNavBtns) {
 
 const year = new Date().getFullYear();
 document.querySelector("#year").textContent = year;
-
-// Google tag (gtag.js)
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag("js", new Date());
-
-gtag("config", "G-X21JSWX0D1");
