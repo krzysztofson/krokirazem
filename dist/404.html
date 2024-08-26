@@ -30,11 +30,14 @@
       <div class="container mx-auto px-4 py-24">
         <div class="items-center lg:grid lg:grid-cols-5 xl:grid-cols-2">
           <div class="col-span-3 xl:col-span-1">
-            <h1 class="text-xl text-blue-400 lg:text-5xl">
-              <span class="text-5xl text-primary lg:text-6xl">Kroki&nbsp;razem</span><br />
-              Poradnia psychologiczno – pedagogiczna
+            <h1 class="text-center text-xl text-blue-400 lg:text-5xl">
+              <span class="text-5xl text-primary lg:text-6xl">404</span> Strona nie znaleziona
             </h1>
-            <p class="py-8 text-lg text-accent lg:text-xl">Razem stawiamy kroki ku zdrowiu psychicznemu</p>
+            <a
+              class="mx-auto mt-6 block w-fit rounded-xl border-2 border-accent bg-accent p-4 text-lg text-white"
+              href="/"
+              >Strona główna</a
+            >
           </div>
           <svg
             version="1.1"
@@ -1596,23 +1599,39 @@
       </div>
     </header>
 
-    <section class="bg-accent py-24" id="kontakt">
+    <section class="bg-accent py-32" id="kontakt">
       <div class="container mx-auto px-4">
         <h2 class="mb-10 text-center text-5xl text-white">Kontakt</h2>
-        <div class="lg:grid lg:grid-cols-3 lg:gap-10">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-10">
           <div class="text-xl text-white">
-            <h3 class="mb-2 text-white"><strong>Poradnia psychologiczna pedagogiczna Kroki Razem</strong></h3>
+            <h3 class="mb-2 text-white"><strong>Poradnia psychologiczno pedagogiczna Kroki Razem</strong></h3>
             <p class="mb-2 text-white">Ul. Żeromskiego 4/50</p>
-            <p class="mb-10 text-white">Warszawa</p>
+            <p class="mb-2 text-white">Warszawa</p>
+            <p class="mb-2 text-white">NIP: 1182098033</p>
           </div>
           <div class="text-xl text-white">
             <p class="mb-2 text-white">
-              Tel: <strong><a href="tel: 123364939-0w4">123364939-0w4</a></strong>
+              Tel: <strong><a href="tel: 606286257">606 286 257</a></strong>
             </p>
-            <p class="mb-2 text-white">
-              Email: <strong><a href="mailto:krokirazem@gmail.com">krokirazem@gmail.com</a></strong>
+            <p class="mb-6 text-white">
+              Email: <strong><a href="mailto:kontakt@krokirazem.pl">kontakt@krokirazem.pl</a></strong>
             </p>
+            <!-- <a
+              class="rounded-xl bg-primary px-4 py-2 text-base text-white transition duration-200 hover:bg-blue-900"
+              href="umow-wizyte.html"
+              >Umów wizytę</a
+            > -->
           </div>
+          <!-- <div>
+            <p class="mb-2 text-white">Zapisz się do newslettera</p>
+            <form action="">
+              <input
+                class="mb-4 w-full rounded-xl border-2 border-white bg-transparent p-4 text-lg text-white placeholder:text-stone-200"
+                type="text"
+                placeholder="Imię i nazwisko"
+              />
+            </form>
+          </div> -->
         </div>
       </div>
     </section>
@@ -1625,17 +1644,80 @@
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
+      title="map"
     ></iframe>
 
     <footer class="py-6">
       <div class="container mx-auto px-4">
         <div class="flex flex-col items-end justify-between text-sm md:flex-row">
           <p>Copyright ©<span id="year"></span> Kroki Razem. All Rights Reserved.</p>
-          <p>Projekt strony - Krzysztof Dąbrowski</p>
+          <p><a href="https://krzysztofd.netlify.app/" target="_blank"> Projekt strony - Krzysztof Dąbrowski</a></p>
         </div>
       </div>
     </footer>
+
+    <section class="js-modal fixed inset-0 z-30 hidden items-center justify-center">
+      <div class="js-modal-bg absolute inset-0 h-screen w-screen bg-gray-600 bg-opacity-50"></div>
+      <div class="relative z-10 max-h-[90%] max-w-2xl overflow-auto rounded-xl bg-white p-8 text-center">
+        <button class="js-modal-close-btn absolute right-8 top-4 hover:opacity-50">✕</button>
+        <h2 class="mb-5 text-3xl text-accent md:text-4xl">Formularz zgłoszeniowy</h2>
+        <p class="mx-auto mb-5">
+          Wypełnij formularz zgłoszeniowy. Po jego otrzymaniu, skontaktujemy się z Tobą, aby dobrać odpowiedniego
+          specjalistę i zaproponować termin bezpłatnej konsultacji wstępnej.
+        </p>
+
+        <form action="">
+          <input
+            class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+            type="text"
+            placeholder="Imię i nazwisko"
+          />
+          <input
+            class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+            type="email"
+            placeholder="Adres e-mail"
+          />
+          <input
+            class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+            type="tel"
+            placeholder="Numer telefonu"
+          />
+          <div class="mb-4">
+            <label class="mb-2 block text-lg text-stone-800">Dla kogo szukasz specjalisty?</label>
+            <select class="w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800">
+              <option>Dla dziecka</option>
+              <option>Dla Pary</option>
+              <option>Psychoterapia Indywidualna</option>
+              <option>Dla Rodziny</option>
+              <option>Logopeda</option>
+              <option>Terapia ręki</option>
+              <option>Nie wiem do kogo się zgłosić</option>
+            </select>
+          </div>
+          <textarea
+            class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+            placeholder="Z jakim problemem się mierzysz?"
+          ></textarea>
+          <textarea
+            class="mb-4 w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800 placeholder:text-stone-500"
+            placeholder="Opisz nam w kilku słowach jakiej pomocy szukasz"
+          ></textarea>
+          <div class="mb-4">
+            <label class="mb-2 block text-lg text-stone-800">Preferowana forma spotkań</label>
+            <select class="w-full rounded-xl border-2 border-blue-100 bg-blue-50 p-4 text-lg text-stone-800">
+              <option>Spotkanie stacjonarne</option>
+              <option>Spotkania online</option>
+            </select>
+          </div>
+          <input
+            class="mb-4 w-full rounded-xl border-2 border-accent bg-accent p-4 text-lg text-white"
+            type="submit"
+            value="Wyślij zgłoszenie"
+          />
+        </form>
+      </div>
+    </section>
   </body>
 
-  <script defer src="assets/js/main.js"></script>
+  <script defer src="./assets/js/main.js"></script>
 </html>
