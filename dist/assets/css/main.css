@@ -756,6 +756,9 @@ tr:hover {
 .gap-8 {
   gap: 2rem;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1253,6 +1256,10 @@ tr:hover {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 @media (min-width: 1280px) {
   .xl\:col-span-1 {
@@ -1273,11 +1280,18 @@ tr:hover {
   .xl\:gap-10 {
     gap: 2.5rem;
   }
+  .xl\:gap-6 {
+    gap: 1.5rem;
+  }
   .xl\:bg-blue-50 {
     --tw-bg-opacity: 1;
     background-color: rgb(239 246 255 / var(--tw-bg-opacity));
   }
   .xl\:pb-0 {
     padding-bottom: 0px;
+  }
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
