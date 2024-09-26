@@ -42,3 +42,23 @@ if (mobileNavBtns) {
 
 const year = new Date().getFullYear();
 document.querySelector("#year").textContent = year;
+
+const navOffer = document.querySelector("#js-offer");
+if (navOffer) {
+  navOffer.addEventListener("mouseover", () => {
+    if (window.innerWidth > 1023) {
+      document.querySelector(".js-nav-list").classList.toggle("hidden");
+    }
+  });
+  navOffer.addEventListener("click", (e) => {
+    if (window.innerWidth <= 1023) {
+      e.preventDefault();
+      document.querySelector("#js-offer-mobile").classList.toggle("hidden");
+      togglenav();
+    }
+  });
+}
+const closeOffer = document.querySelector(".js-nav-list-close");
+closeOffer.addEventListener("click", () => {
+  document.querySelector(".js-nav-list").classList.toggle("hidden");
+});

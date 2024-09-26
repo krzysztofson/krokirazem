@@ -151,7 +151,38 @@
             class="js-nav absolute inset-x-0 top-20 mx-auto hidden w-full flex-col space-y-5 bg-white py-10 text-center text-sm font-light text-blue-800 lg:relative lg:top-0 lg:flex lg:flex-row lg:items-center lg:justify-end lg:space-x-5 lg:space-y-0 lg:py-0 lg:text-right"
           >
             <a class="hover:text-orange-600" href="#onas">O nas</a>
-            <a class="hover:text-orange-600" href="#oferta">Oferta</a>
+            <a class="hover:text-orange-600" id="js-offer" href="#oferta">Oferta</a>
+            <div class="hidden pl-2 lg:hidden" id="js-offer-mobile">
+              <h3 class="text-md pb-2 pt-4 text-primary">Pogłęb zrozumienie swojego dziecka</h3>
+              <ul class="list-none pl-0">
+                <li class="text-sm"><a href="zywienie-dzieci-i-mlodziezy.html">Żywienie dzieci i młodzieży</a></li>
+                <li class="text-sm"><a href="interwencja-kryzysowa.html">Interwencja kryzysowa</a></li>
+                <li class="text-sm">
+                  <a href="psychoterapia-dzieci-mlodziezy.html">Psychoterapia dzieci i młodzieży</a>
+                </li>
+                <li class="text-sm"><a href="konsultacja-psychologa-dzieciecego.html">Psycholog dziecięcy</a></li>
+                <li class="text-sm"><a href="konsultacja-dla-rodzicow.html">Konsultacje dla rodziców</a></li>
+                <li class="text-sm"><a href="proces-prediagnostyczny.html">Proces prediagnostyczny</a></li>
+              </ul>
+              <h3 class="text-md pb-2 pt-4 text-primary">Znajdź wsparcie dla siebie</h3>
+              <ul class="list-none pl-0">
+                <li class="text-sm"><a href="psychoterapia-idywidualna.html">Psychoterapia indywidualna</a></li>
+                <li class="text-sm"><a href="psychoterapia-par.html">Psychoterapia par i rodzin</a></li>
+                <li class="text-sm">
+                  <a href="konsultacja-dietetyczna-i-psychodietetyczna.html"
+                    >Konsultacje dietetyczne i psychodietetyka</a
+                  >
+                </li>
+                <li class="text-sm"><a href="diagnoza-ADHD.html">Diagnoza ADHD</a></li>
+                <li class="text-sm"><a href="konsultacja-psychologiczna.html">Konsultacje psychologiczne</a></li>
+              </ul>
+              <h3 class="text-md pb-2 pt-4 text-primary">Zapewnij wsparcie w rozwoju</h3>
+              <ul class="list-none pl-0">
+                <li class="text-sm"><a href="terapia-tus.html">Zajęcia TUS</a></li>
+                <li class="text-sm"><a href="terapia-reki.html">Terapia ręki</a></li>
+                <li class="text-sm"><a href="terapia-pedagogiczna.html">Terapia pedagogiczna</a></li>
+              </ul>
+            </div>
             <a class="hover:text-orange-600" href="zespol.html">Zespół</a>
             <a class="hover:text-orange-600" href="cennik.html">Cennik</a>
             <a class="hover:text-orange-600" href="#blog">Blog</a>
@@ -174,6 +205,57 @@
               />
             </svg>
           </button>
+          <div class="js-nav-list left-0 top-32 hidden w-full bg-white py-6 shadow-md lg:fixed">
+            <div class="container mx-auto px-4">
+              <div class="grid grid-cols-3 gap-8">
+                <div>
+                  <h3 class="pb-2 text-lg text-primary">Pogłęb zrozumienie swojego dziecka</h3>
+                  <ul>
+                    <li class="text-sm"><a href="zywienie-dzieci-i-mlodziezy.html">Żywienie dzieci i młodzieży</a></li>
+                    <li class="text-sm"><a href="interwencja-kryzysowa.html">Interwencja kryzysowa</a></li>
+                    <li class="text-sm">
+                      <a href="psychoterapia-dzieci-mlodziezy.html">Psychoterapia dzieci i młodzieży</a>
+                    </li>
+                    <li class="text-sm"><a href="konsultacja-psychologa-dzieciecego.html">Psycholog dziecięcy</a></li>
+                    <li class="text-sm"><a href="konsultacja-dla-rodzicow.html">Konsultacje dla rodziców</a></li>
+                    <li class="text-sm"><a href="proces-prediagnostyczny.html">Proces prediagnostyczny</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="pb-2 text-lg text-primary">Znajdź wsparcie dla siebie</h3>
+                  <ul>
+                    <li class="text-sm"><a href="psychoterapia-idywidualna.html">Psychoterapia indywidualna</a></li>
+                    <li class="text-sm"><a href="psychoterapia-par.html">Psychoterapia par i rodzin</a></li>
+                    <li class="text-sm">
+                      <a href="konsultacja-dietetyczna-i-psychodietetyczna.html"
+                        >Konsultacje dietetyczne i psychodietetyka</a
+                      >
+                    </li>
+                    <li class="text-sm"><a href="diagnoza-ADHD.html">Diagnoza ADHD</a></li>
+                    <li class="text-sm"><a href="konsultacja-psychologiczna.html">Konsultacje psychologiczne</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="pb-2 text-lg text-primary">Zapewnij wsparcie w rozwoju</h3>
+                  <ul>
+                    <li class="text-sm"><a href="terapia-tus.html">Zajęcia TUS</a></li>
+                    <li class="text-sm"><a href="terapia-reki.html">Terapia ręki</a></li>
+                    <li class="text-sm"><a href="terapia-pedagogiczna.html">Terapia pedagogiczna</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button class="js-nav-list-close absolute right-5 top-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 11.4142L17.2929 6.12132C17.6834 5.73086 18.3166 5.73086 18.7071 6.12132C19.0976 6.51179 19.0976 7.14494 18.7071 7.53541L13.4142 12.8284L18.7071 18.1213C19.0976 18.5118 19.0976 19.1449 18.7071 19.5354C18.3166 19.9259 17.6834 19.9259 17.2929 19.5354L12 14.2426L6.70711 19.5354C6.31658 19.9259 5.68342 19.9259 5.29289 19.5354C4.90237 19.1449 4.90237 18.5118 5.29289 18.1213L10.5858 12.8284L5.29289 7.53541C4.90237 7.14494 4.90237 6.51179 5.29289 6.12132C5.68342 5.73086 6.31658 5.73086 6.70711 6.12132L12 11.4142Z"
+                  fill="#000"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </nav>
