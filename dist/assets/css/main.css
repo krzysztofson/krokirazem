@@ -612,9 +612,6 @@ tr:hover {
 .z-30 {
   z-index: 30;
 }
-.-z-10 {
-  z-index: -10;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -695,8 +692,14 @@ tr:hover {
 .h-screen {
   height: 100vh;
 }
+.h-full {
+  height: 100%;
+}
 .max-h-\[90\%\] {
   max-height: 90%;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-20 {
   width: 5rem;
@@ -843,10 +846,6 @@ tr:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(60 108 168 / var(--tw-bg-opacity));
@@ -954,8 +953,14 @@ tr:hover {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pl-0 {
+  padding-left: 0px;
+}
 .pl-12 {
   padding-left: 3rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
 }
 .pl-6 {
   padding-left: 1.5rem;
@@ -966,17 +971,14 @@ tr:hover {
 .pt-3 {
   padding-top: 0.75rem;
 }
-.pt-6 {
-  padding-top: 1.5rem;
-}
-.pl-2 {
-  padding-left: 0.5rem;
-}
 .pt-4 {
   padding-top: 1rem;
 }
-.pl-0 {
-  padding-left: 0px;
+.pt-6 {
+  padding-top: 1.5rem;
+}
+.pb-24 {
+  padding-bottom: 6rem;
 }
 .text-left {
   text-align: left;
@@ -1067,9 +1069,6 @@ tr:hover {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.opacity-0 {
-  opacity: 0;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -1227,9 +1226,6 @@ tr:hover {
   .lg\:top-10 {
     top: 2.5rem;
   }
-  .lg\:z-10 {
-    z-index: 10;
-  }
   .lg\:block {
     display: block;
   }
@@ -1241,6 +1237,12 @@ tr:hover {
   }
   .lg\:hidden {
     display: none;
+  }
+  .lg\:h-auto {
+    height: auto;
+  }
+  .lg\:min-h-0 {
+    min-height: 0px;
   }
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1306,9 +1308,6 @@ tr:hover {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-  .lg\:opacity-100 {
-    opacity: 1;
   }
 }
 @media (min-width: 1280px) {
