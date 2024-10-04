@@ -689,11 +689,11 @@ tr:hover {
 .h-40 {
   height: 10rem;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .max-h-\[90\%\] {
   max-height: 90%;
@@ -728,6 +728,12 @@ tr:hover {
 }
 .max-w-full {
   max-width: 100%;
+}
+.max-w-3xl {
+  max-width: 48rem;
+}
+.max-w-4xl {
+  max-width: 56rem;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -782,6 +788,9 @@ tr:hover {
 }
 .gap-8 {
   gap: 2rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -932,6 +941,10 @@ tr:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -940,6 +953,9 @@ tr:hover {
 }
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pb-24 {
+  padding-bottom: 6rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -977,8 +993,8 @@ tr:hover {
 .pt-6 {
   padding-top: 1.5rem;
 }
-.pb-24 {
-  padding-bottom: 6rem;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-left {
   text-align: left;
@@ -1188,6 +1204,9 @@ tr:hover {
   .md\:gap-6 {
     gap: 1.5rem;
   }
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1313,6 +1332,9 @@ tr:hover {
 @media (min-width: 1280px) {
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
+  }
+  .xl\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
   .xl\:grid {
     display: grid;
