@@ -626,6 +626,10 @@ tr:hover {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -717,6 +721,18 @@ tr:hover {
 .w-screen {
   width: 100vw;
 }
+.w-36 {
+  width: 9rem;
+}
+.w-56 {
+  width: 14rem;
+}
+.w-72 {
+  width: 18rem;
+}
+.w-64 {
+  width: 16rem;
+}
 .min-w-full {
   min-width: 100%;
 }
@@ -729,11 +745,8 @@ tr:hover {
 .max-w-full {
   max-width: 100%;
 }
-.max-w-3xl {
-  max-width: 48rem;
-}
-.max-w-4xl {
-  max-width: 56rem;
+.flex-1 {
+  flex: 1 1 0%;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -774,6 +787,9 @@ tr:hover {
 .justify-between {
   justify-content: space-between;
 }
+.gap-1 {
+  gap: 0.25rem;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -788,9 +804,6 @@ tr:hover {
 }
 .gap-8 {
   gap: 2rem;
-}
-.gap-1 {
-  gap: 0.25rem;
 }
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -941,10 +954,6 @@ tr:hover {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -981,6 +990,9 @@ tr:hover {
 .pl-6 {
   padding-left: 1.5rem;
 }
+.pt-10 {
+  padding-top: 2.5rem;
+}
 .pt-12 {
   padding-top: 3rem;
 }
@@ -993,8 +1005,17 @@ tr:hover {
 .pt-6 {
   padding-top: 1.5rem;
 }
-.pt-10 {
-  padding-top: 2.5rem;
+.pt-14 {
+  padding-top: 3.5rem;
+}
+.pb-36 {
+  padding-bottom: 9rem;
+}
+.pt-20 {
+  padding-top: 5rem;
+}
+.pt-32 {
+  padding-top: 8rem;
 }
 .text-left {
   text-align: left;
@@ -1186,6 +1207,10 @@ tr:hover {
   }
 }
 @media (min-width: 768px) {
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .md\:grid {
     display: grid;
   }
@@ -1198,14 +1223,14 @@ tr:hover {
   .md\:flex-row {
     flex-direction: row;
   }
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
   .md\:gap-4 {
     gap: 1rem;
   }
   .md\:gap-6 {
     gap: 1.5rem;
-  }
-  .md\:gap-10 {
-    gap: 2.5rem;
   }
   .md\:text-2xl {
     font-size: 1.5rem;
@@ -1332,9 +1357,6 @@ tr:hover {
 @media (min-width: 1280px) {
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
-  }
-  .xl\:col-span-4 {
-    grid-column: span 4 / span 4;
   }
   .xl\:grid {
     display: grid;
