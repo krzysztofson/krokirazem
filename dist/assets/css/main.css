@@ -711,6 +711,9 @@ tr:hover {
 .w-44 {
   width: 11rem;
 }
+.w-72 {
+  width: 18rem;
+}
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -720,18 +723,6 @@ tr:hover {
 }
 .w-screen {
   width: 100vw;
-}
-.w-36 {
-  width: 9rem;
-}
-.w-56 {
-  width: 14rem;
-}
-.w-72 {
-  width: 18rem;
-}
-.w-64 {
-  width: 16rem;
 }
 .min-w-full {
   min-width: 100%;
@@ -744,9 +735,6 @@ tr:hover {
 }
 .max-w-full {
   max-width: 100%;
-}
-.flex-1 {
-  flex: 1 1 0%;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -996,26 +984,20 @@ tr:hover {
 .pt-12 {
   padding-top: 3rem;
 }
+.pt-14 {
+  padding-top: 3.5rem;
+}
 .pt-3 {
   padding-top: 0.75rem;
+}
+.pt-32 {
+  padding-top: 8rem;
 }
 .pt-4 {
   padding-top: 1rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
-}
-.pt-14 {
-  padding-top: 3.5rem;
-}
-.pb-36 {
-  padding-bottom: 9rem;
-}
-.pt-20 {
-  padding-top: 5rem;
-}
-.pt-32 {
-  padding-top: 8rem;
 }
 .text-left {
   text-align: left;
