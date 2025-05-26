@@ -760,6 +760,9 @@ tr:hover {
 .list-none {
   list-style-type: none;
 }
+.list-decimal {
+  list-style-type: decimal;
+}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
