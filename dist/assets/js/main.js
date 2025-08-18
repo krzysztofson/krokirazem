@@ -62,3 +62,43 @@ if (mobileNavBtns) {
 // closeOffer.addEventListener("click", () => {
 //   document.querySelector(".js-nav-list").classList.toggle("hidden");
 // });
+
+// Czytaj więcej (sekcja "Dowiedz się więcej")
+(function () {
+  const btn = document.getElementById("readmore-btn");
+  const box = document.getElementById("readmore-content");
+  if (!btn || !box) return;
+
+  // Ustaw początkową wysokość
+  box.style.maxHeight = "0px";
+
+  const open = () => {
+    box.classList.add("is-open");
+    box.style.maxHeight = box.scrollHeight + "px";
+    btn.setAttribute("aria-expanded", "true");
+    btn.textContent = "Zwiń";
+  };
+
+  const close = () => {
+    box.style.maxHeight = box.scrollHeight + "px"; // przygotowanie do animacji
+    requestAnimationFrame(() => {
+      box.classList.remove("is-open");
+      box.style.maxHeight = "0px";
+    });
+    btn.setAttribute("aria-expanded", "false");
+    btn.textContent = "Czytaj więcej";
+  };
+
+  btn.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    expanded ? close() : open();
+  });
+
+  // Po zakończeniu animacji usuń inline maxHeight gdy otwarte (lepsza responsywność)
+  box.addEventListener("transitionend", (e) => {
+    if (e.propertyName !== "max-height") return;
+    if (btn.getAttribute("aria-expanded") === "true") {
+      box.style.maxHeight = "none";
+    }
+  });
+})();
