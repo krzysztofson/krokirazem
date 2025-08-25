@@ -561,6 +561,16 @@ tr:hover {
   animation: headAnimation 4s ease-in-out infinite;
   transform-origin: bottom;
 } */
+/* Read more animation */
+.readmore-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.readmore-content.is-open {
+  opacity: 1;
+}
 /* Custom CSS. Ensure this comes before the tailwind utilities*/
 /* purgecss end ignore */
 .fixed {
@@ -674,9 +684,6 @@ tr:hover {
 }
 .block {
   display: block;
-}
-.inline {
-  display: inline;
 }
 .flex {
   display: flex;
@@ -912,6 +919,10 @@ tr:hover {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -959,10 +970,6 @@ tr:hover {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;

@@ -63,7 +63,6 @@ if (mobileNavBtns) {
 //   document.querySelector(".js-nav-list").classList.toggle("hidden");
 // });
 
-// Czytaj więcej (sekcja "Dowiedz się więcej")
 (function () {
   const btn = document.getElementById("readmore-btn");
   const box = document.getElementById("readmore-content");
@@ -80,7 +79,7 @@ if (mobileNavBtns) {
   };
 
   const close = () => {
-    box.style.maxHeight = box.scrollHeight + "px"; // przygotowanie do animacji
+    box.style.maxHeight = box.scrollHeight + "px";
     requestAnimationFrame(() => {
       box.classList.remove("is-open");
       box.style.maxHeight = "0px";
@@ -94,7 +93,6 @@ if (mobileNavBtns) {
     expanded ? close() : open();
   });
 
-  // Po zakończeniu animacji usuń inline maxHeight gdy otwarte (lepsza responsywność)
   box.addEventListener("transitionend", (e) => {
     if (e.propertyName !== "max-height") return;
     if (btn.getAttribute("aria-expanded") === "true") {
