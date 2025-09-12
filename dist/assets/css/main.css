@@ -589,11 +589,17 @@ tr:hover {
   left: 0px;
   right: 0px;
 }
+.bottom-6 {
+  bottom: 1.5rem;
+}
 .left-0 {
   left: 0px;
 }
 .right-5 {
   right: 1.25rem;
+}
+.right-6 {
+  right: 1.5rem;
 }
 .right-8 {
   right: 2rem;
@@ -612,12 +618,6 @@ tr:hover {
 }
 .top-4 {
   top: 1rem;
-}
-.bottom-6 {
-  bottom: 1.5rem;
-}
-.right-6 {
-  right: 1.5rem;
 }
 .z-10 {
   z-index: 10;
@@ -679,6 +679,9 @@ tr:hover {
 .mt-20 {
   margin-top: 5rem;
 }
+.mt-4 {
+  margin-top: 1rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -687,9 +690,6 @@ tr:hover {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-4 {
-  margin-top: 1rem;
 }
 .block {
   display: block;
@@ -873,10 +873,6 @@ tr:hover {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.border-blue-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(191 219 254 / var(--tw-border-opacity));
 }
 .bg-accent {
   --tw-bg-opacity: 1;
