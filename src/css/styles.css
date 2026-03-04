@@ -140,3 +140,8 @@ tr:hover {
 .readmore-content.is-open {
   opacity: 1;
 }
+
+.ti-widget[data-layout-id='112'][data-set-id='light-background'] {
+  right: 0 !important;
+  left: auto !important;
+}
